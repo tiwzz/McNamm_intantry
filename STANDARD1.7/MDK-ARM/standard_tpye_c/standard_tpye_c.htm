@@ -3,7 +3,7 @@
 <title>Static Call Graph - [standard_tpye_c\standard_tpye_c.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image standard_tpye_c\standard_tpye_c.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Sep 16 10:52:34 2023
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Sep 16 11:37:35 2023
 <BR><P>
 <H3>Maximum Stack Usage =        472 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -870,8 +870,8 @@ Global Symbols
 <LI><a href="#[1d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_QuaternionEKF_Update
 <LI><a href="#[1d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_QuaternionEKF_Init
 <LI><a href="#[18d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Char_ReFresh
 <LI><a href="#[296]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;detect_init
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Char_ReFresh
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_QuaternionEKF_xhatUpdate
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IMU_QuaternionEKF_Observe
 <LI><a href="#[1d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Kalman_Filter_Update
@@ -3115,15 +3115,15 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
 <P><STRONG><a name="[282]"></a>PID_calc</STRONG> (Thumb, 346 bytes, Stack size 0 bytes, pid.o(i.PID_calc))
-<BR><BR>[Called By]<UL><LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_control_loop
-<LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_set_contorl
+<BR><BR>[Called By]<UL><LI><a href="#[28f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_set_contorl
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_control_loop
+<LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_control_loop
 </UL>
 
 <P><STRONG><a name="[28b]"></a>PID_init</STRONG> (Thumb, 88 bytes, Stack size 0 bytes, pid.o(i.PID_init))
-<BR><BR>[Called By]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_init
-<LI><a href="#[2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gimbal_init
+<BR><BR>[Called By]<UL><LI><a href="#[2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gimbal_init
 <LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_init
+<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_init
 </UL>
 
 <P><STRONG><a name="[2fe]"></a>RC_Init</STRONG> (Thumb, 94 bytes, Stack size 12 bytes, bsp_rc.o(i.RC_Init))
@@ -4190,8 +4190,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[295]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskGetTickCount
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART6_IRQHandler
 <LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_CAN_RxFifo0MsgPendingCallback
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART6_IRQHandler
 </UL>
 
 <P><STRONG><a name="[87]"></a>detect_task</STRONG> (Thumb, 256 bytes, Stack size 0 bytes, detect_task.o(i.detect_task))
@@ -4303,9 +4303,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[287]"></a>get_remote_control_point</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, remote_control.o(i.get_remote_control_point))
-<BR><BR>[Called By]<UL><LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_init
-<LI><a href="#[2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gimbal_init
+<BR><BR>[Called By]<UL><LI><a href="#[2a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gimbal_init
 <LI><a href="#[286]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_init
+<LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_init
 </UL>
 
 <P><STRONG><a name="[128]"></a>get_robot_id</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, referee.o(i.get_robot_id))
@@ -4571,12 +4571,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = shoot_task &rArr; shoot_control_loop &rArr; stm32_step_shoot_1 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_cmd_shoot
+<LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toe_is_error
 <LI><a href="#[30a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_set_mode
 <LI><a href="#[304]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_init
 <LI><a href="#[30e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_feedback_update
 <LI><a href="#[300]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_control_loop
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_cmd_shoot
-<LI><a href="#[293]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toe_is_error
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> freertos.o(.constdata)
 </UL>
@@ -4700,9 +4700,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osDelay
 <LI><a href="#[20b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
+<LI><a href="#[310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_error_list_point
 <LI><a href="#[30f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_printf
 <LI><a href="#[311]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_battery_percentage
-<LI><a href="#[310]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_error_list_point
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> freertos.o(.constdata)
 </UL>
@@ -5189,12 +5189,12 @@ Global Symbols
 <P><STRONG><a name="[281]"></a>__aeabi_d2f</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, d2f_clz.o(x$fpl$d2f))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2f
 </UL>
-<BR>[Called By]<UL><LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
-<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
-<LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
+<BR>[Called By]<UL><LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
 <LI><a href="#[2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_yaw
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_pitch
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_control_loop
+<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
+<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 </UL>
 
 <P><STRONG><a name="[327]"></a>_d2f</STRONG> (Thumb, 700 bytes, Stack size 32 bytes, d2f_clz.o(x$fpl$d2f), UNUSED)
@@ -5208,12 +5208,12 @@ Global Symbols
 <P><STRONG><a name="[25c]"></a>__aeabi_dadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, daddsub_clz.o(x$fpl$dadd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_dadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
-<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
-<LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
+<BR>[Called By]<UL><LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
 <LI><a href="#[2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_yaw
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_pitch
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_control_loop
+<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
+<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_pow
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 <LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
@@ -5246,12 +5246,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_ddiv
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_task
-<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
-<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
 <LI><a href="#[2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_yaw
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_pitch
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_control_loop
+<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
+<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_pow
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
@@ -5308,12 +5308,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_dmul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_task
-<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
-<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
 <LI><a href="#[2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_yaw
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_pitch
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_control_loop
+<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
+<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_pow
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 <LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
@@ -5404,11 +5404,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_dsub
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UI_task
-<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
-<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
 <LI><a href="#[2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_yaw
 <LI><a href="#[2a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_pitch
+<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
+<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_pow
 <LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 </UL>
@@ -5467,12 +5467,12 @@ Global Symbols
 <P><STRONG><a name="[27f]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
-<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
-<LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
+<BR>[Called By]<UL><LI><a href="#[2a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vision_loop
 <LI><a href="#[29a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gimbal_init_control
 <LI><a href="#[2a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gimbal_control_loop
 <LI><a href="#[27d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;chassis_control_loop
+<LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
+<LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
 </UL>
 
 <P><STRONG><a name="[344]"></a>_f2d</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d), UNUSED)
@@ -6421,9 +6421,9 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = shoot_control_loop &rArr; stm32_step_shoot_1 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[301]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;laser_on
+<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_calc
 <LI><a href="#[303]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_1
 <LI><a href="#[302]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_0
-<LI><a href="#[282]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_calc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_task
 </UL>
@@ -6436,12 +6436,12 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = shoot_init &rArr; stm32_step_shoot_pid_clear &rArr; __aeabi_memclr4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[287]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_remote_control_point
-<LI><a href="#[306]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_pid_clear
-<LI><a href="#[305]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_shoot_pid_init
 <LI><a href="#[307]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_trigger_motor_measure_point
 <LI><a href="#[309]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_can_3508_right_measure_point
 <LI><a href="#[308]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_can_3508_left_measure_point
 <LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PID_init
+<LI><a href="#[306]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_step_shoot_pid_clear
+<LI><a href="#[305]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_shoot_pid_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;shoot_task
 </UL>
