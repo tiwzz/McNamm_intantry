@@ -356,8 +356,8 @@ static void gimbal_init(gimbal_control_t *init)
     init->gimbal_pitch_motor.motor_gyro_set = init->gimbal_pitch_motor.motor_gyro;
 		init->gimbal_yaw_motor.max_relative_angle = 2.10f;
     init->gimbal_yaw_motor.min_relative_angle = -2.60f;  
-		init->gimbal_pitch_motor.min_relative_angle = -6.0f;  
-    init->gimbal_pitch_motor.max_relative_angle = 6.0f;   
+		init->gimbal_pitch_motor.min_relative_angle = -0.81f;  
+    init->gimbal_pitch_motor.max_relative_angle = 0.07f;   
 		
 }
 
