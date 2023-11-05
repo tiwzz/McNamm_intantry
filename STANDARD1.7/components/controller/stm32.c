@@ -58,24 +58,24 @@ void stm32_pid_yaw_init(void)  //yaw
 {
 	stm32_U_yaw.P_P=1600;
 	stm32_U_yaw.P_I=0;
-	stm32_U_yaw.P_D=10;
-	stm32_U_yaw.P_N=80;
-	stm32_U_yaw.S_P=80;
+	stm32_U_yaw.P_D=5;
+	stm32_U_yaw.P_N=10;
+	stm32_U_yaw.S_P=85;
 	stm32_U_yaw.S_I=0;
-	stm32_U_yaw.S_D=10;
-	stm32_U_yaw.S_N=40;
+	stm32_U_yaw.S_D=5;
+	stm32_U_yaw.S_N=10;
 		
 }
 
 void stm32_pid_pitch_init(void)  //pitch
 {
-	stm32_U_pitch.P_P=800;
-	stm32_U_pitch.P_I=0.1;
-	stm32_U_pitch.P_D=0;
-	stm32_U_pitch.P_N=0;
+	stm32_U_pitch.P_P=850;
+	stm32_U_pitch.P_I=0;
+	stm32_U_pitch.P_D=3;
+	stm32_U_pitch.P_N=5;
 	stm32_U_pitch.S_P=100;
-	stm32_U_pitch.S_I=5;
-	stm32_U_pitch.S_D=12;
+	stm32_U_pitch.S_I=0;
+	stm32_U_pitch.S_D=4;
 	stm32_U_pitch.S_N=40;		
 }
 
