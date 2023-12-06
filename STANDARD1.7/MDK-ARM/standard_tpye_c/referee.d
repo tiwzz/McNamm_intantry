@@ -50,3 +50,4 @@ standard_tpye_c\referee.o: ..\application\struct_typedef.h
 standard_tpye_c\referee.o: D:\Keil_v5\ARM\5.06\Bin\..\include\string.h
 standard_tpye_c\referee.o: D:\Keil_v5\ARM\5.06\Bin\..\include\stdio.h
 standard_tpye_c\referee.o: ..\components\support\CRC8_CRC16.h
+standard_tpye_c\referee.o: ../Inc/usart.h

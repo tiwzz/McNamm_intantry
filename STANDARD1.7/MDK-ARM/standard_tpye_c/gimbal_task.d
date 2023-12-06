@@ -90,3 +90,5 @@ standard_tpye_c\gimbal_task.o: ..\application\vision.h
 standard_tpye_c\gimbal_task.o: ../Inc/usart.h
 standard_tpye_c\gimbal_task.o: ..\application\vision_task.h
 standard_tpye_c\gimbal_task.o: ../Inc/dma.h
+standard_tpye_c\gimbal_task.o: ..\components\controller\controller.h
+standard_tpye_c\gimbal_task.o: ..\bsp\boards\bsp_dwt.h

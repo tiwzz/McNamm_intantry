@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "user_lib.h": "c",
+        "usart.h": "c",
+        "vision_task.h": "c",
+        "referee.h": "c",
+        "gimbal_task.h": "c"
+    }
+}

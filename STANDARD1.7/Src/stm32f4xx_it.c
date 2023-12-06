@@ -251,13 +251,14 @@ void EXTI9_5_IRQHandler(void)
   /* USER CODE END EXTI9_5_IRQn 1 */
 }
 
-/**
+
+  /* USER CODE BEGIN USART1_IRQn 0 */
+	 /* USER CODE BEGIN USART1_IRQn 0 */
+  /**
   * @brief This function handles USART1 global interrupt.
   */
 void USART1_IRQHandler(void)
 {
-  /* USER CODE BEGIN USART1_IRQn 0 */
-	 /* USER CODE BEGIN USART1_IRQn 0 */
 	if(huart1.Instance->SR & UART_FLAG_RXNE)//接收到数据
 	{
 		__HAL_UART_CLEAR_PEFLAG(&huart1);

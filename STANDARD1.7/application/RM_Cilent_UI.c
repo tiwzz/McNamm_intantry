@@ -103,7 +103,7 @@ void UI_Delete(u8 Del_Operate,u8 Del_Layer)
 	framepoint=(unsigned char *)&framehead;
 	for(loop_control=0;loop_control<sizeof(framehead);loop_control++)
 	{
-	  UI_SendByte(*framepoint);
+	  UI_SendByte(*framepoint);                                              
 	  framepoint++;
 	}
 	framepoint=(unsigned char *)&datahead;

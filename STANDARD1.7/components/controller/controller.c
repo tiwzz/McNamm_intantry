@@ -190,7 +190,7 @@ void pid_init(
  * @brief          PID计算
  * @param[in]      PID结构体
  * @param[in]      测量值
- * @param[in]      期望值
+ * @param[in]      设定值
  * @retval         返回空
  */
 float pid_calculate(PID_t *pid, float measure, float ref)

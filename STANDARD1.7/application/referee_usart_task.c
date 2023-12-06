@@ -154,7 +154,6 @@ void referee_unpack_fifo_data(void)
           }
         }
       }break;  
-      
       case STEP_DATA_CRC16:
       {
         if (p_obj->index < (REF_HEADER_CRC_CMDID_LEN + p_obj->data_len))
